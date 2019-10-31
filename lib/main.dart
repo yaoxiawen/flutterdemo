@@ -11,6 +11,7 @@ import 'officialdemo/OfficialDemoPage.dart';
 import 'progressdemo/ProgressDemo.dart';
 import 'routedemo/PushNamedDemoPage.dart';
 import 'routedemo/RouteDemoPage.dart';
+import 'sharedpreferencesdemo/SharedPreferencesDemo.dart';
 import 'statemanager/StateManagerDemo.dart';
 import 'tabbardemo/TabBarDemoPage.dart';
 import 'textdemo/TextDemo.dart';
@@ -75,7 +76,7 @@ class HomePage extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   margin: EdgeInsets.symmetric(horizontal: 10),
                   height: 50,
-                  child: Text(routeName[index]),
+                  child: Text(routeLists[index]),
                 ),
               ),
             );
@@ -88,63 +89,51 @@ class HomePage extends StatelessWidget {
 }
 
 Map<String, WidgetBuilder> routes = {
-  "officialdemo": (context) {
+  "官方Demo": (context) {
     return OfficialDemoPage(title: "Official Demo");
   },
-  "listviewdemo": (context) {
+  "ListViewDemo": (context) {
     return ListViewDemoPage();
   },
-  "tabbardemo": (context) {
+  "TabBarDemo": (context) {
     return TabBarDemoPage();
   },
-  "routedemo": (context) {
+  "RouteDemo": (context) {
     return RouteDemoPage();
   },
-  "statemanagerdemo": (context) {
+  "StateManagerDemo": (context) {
     return StateManagerDemo();
   },
-  "textdemo": (context) {
+  "TextDemo": (context) {
     return TextDemo();
   },
-  "buttondemo": (context) {
+  "ButtonDemo": (context) {
     return ButtonDemo();
   },
-  "canvasdemo": (context) {
+  "CanvasDemo": (context) {
     return CanvasDemo();
   },
-  "progressdemo": (context) {
+  "ProgressDemo": (context) {
     return ProgressDemo();
   },
-  "imagedemo": (context) {
+  "ImageDemo": (context) {
     return ImageDemo();
   },
-  "lifedemo": (context) {
+  "LifeDemo": (context) {
     return LifeDemo();
   },
-  "textfielddemo": (context) {
+  "TextFieldDemo": (context) {
     return TextFieldDemo();
   },
-  "pushnameddemo": (context) {
+  "SharedPreferencesDemo": (context) {
+    return SharedPreferencesDemo();
+  },
+  "PushNamedDemo": (context) {
     return PushNamedDemoPage();
   },
-  "pushnameddemo2": (context) {
+  "PushNamedDemo2": (context) {
     return PushNamedDemoPage(
       title: ModalRoute.of(context).settings.arguments,
     );
   }
 };
-
-const routeName = [
-  "官方Demo",
-  "ListViewDemo",
-  "TabBarDemo",
-  "RouteDemo",
-  "StateManagerDemo",
-  "TextDemo",
-  "ButtonDemo",
-  "CanvasDemo",
-  "ProgressDemo",
-  "ImageDemo",
-  "LifeDemo",
-  "TextFieldDemo",
-];
