@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'buttondemo/ButtonDemo.dart';
 import 'canvasdemo/CanvasDemo.dart';
+import 'icondemo/IconDemo.dart';
 import 'imagedemo/ImageDemo.dart';
 import 'lifedemo/LifeDemo.dart';
 import 'listviewdemo/ListViewDemoPage.dart';
@@ -127,6 +128,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "ImageDemo": (context) {
     return ImageDemo();
+  },
+  "IconDemo": (context) {
+    return IconDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
