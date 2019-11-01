@@ -116,9 +116,6 @@ Map<String, WidgetBuilder> routes = {
   "ProgressDemo": (context) {
     return ProgressDemo();
   },
-  "ImageDemo": (context) {
-    return ImageDemo();
-  },
   "LifeDemo": (context) {
     return LifeDemo();
   },
@@ -127,6 +124,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "SharedPreferencesDemo": (context) {
     return SharedPreferencesDemo();
+  },
+  "ImageDemo": (context) {
+    return ImageDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
