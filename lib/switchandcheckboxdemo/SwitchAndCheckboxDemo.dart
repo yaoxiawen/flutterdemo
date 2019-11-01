@@ -14,7 +14,7 @@ class SwitchAndCheckboxState extends State<SwitchAndCheckboxDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(""),
+        title: Text("YXW SwitchAndCheckbox Demo"),
       ),
       body: Container(
         margin: EdgeInsets.only(left: 12),
