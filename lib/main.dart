@@ -14,6 +14,7 @@ import 'routedemo/PushNamedDemoPage.dart';
 import 'routedemo/RouteDemoPage.dart';
 import 'sharedpreferencesdemo/SharedPreferencesDemo.dart';
 import 'statemanager/StateManagerDemo.dart';
+import 'switchandcheckboxdemo/SwitchAndCheckboxDemo.dart';
 import 'tabbardemo/TabBarDemoPage.dart';
 import 'textdemo/TextDemo.dart';
 import 'textfielddemo/TextFieldDemo.dart';
@@ -131,6 +132,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "IconDemo": (context) {
     return IconDemo();
+  },
+  "SwitchAndCheckboxDemo": (context) {
+    return SwitchAndCheckboxDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
