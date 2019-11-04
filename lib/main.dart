@@ -10,6 +10,7 @@ import 'lifedemo/LifeDemo.dart';
 import 'listviewdemo/ListViewDemoPage.dart';
 import 'officialdemo/OfficialDemoPage.dart';
 import 'progressdemo/ProgressDemo.dart';
+import 'progressdemo/ProgressDemo2.dart';
 import 'routedemo/PushNamedDemoPage.dart';
 import 'routedemo/RouteDemoPage.dart';
 import 'sharedpreferencesdemo/SharedPreferencesDemo.dart';
@@ -135,6 +136,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "SwitchAndCheckboxDemo": (context) {
     return SwitchAndCheckboxDemo();
+  },
+  "ProgressDemo2": (context) {
+    return ProgressDemo2();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
