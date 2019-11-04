@@ -9,6 +9,7 @@ import 'imagedemo/ImageDemo.dart';
 import 'lifedemo/LifeDemo.dart';
 import 'listviewdemo/ListViewDemoPage.dart';
 import 'officialdemo/OfficialDemoPage.dart';
+import 'progressdemo/ProgressAnimationDemo.dart';
 import 'progressdemo/ProgressDemo.dart';
 import 'progressdemo/ProgressDemo2.dart';
 import 'routedemo/PushNamedDemoPage.dart';
@@ -139,6 +140,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "ProgressDemo2": (context) {
     return ProgressDemo2();
+  },
+  "ProgressAnimationDemo": (context) {
+    return ProgressAnimationDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
