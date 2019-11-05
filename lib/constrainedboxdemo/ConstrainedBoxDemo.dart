@@ -10,7 +10,7 @@ class ConstrainedBoxDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("YXW Constrained Demo"),
+        title: Text("YXW ConstrainedBox Demo"),
       ),
       body: Container(
         margin: EdgeInsets.only(left: 12, right: 12),
