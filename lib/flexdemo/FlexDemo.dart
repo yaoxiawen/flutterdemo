@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+//弹性布局
+//弹性布局允许子组件按照一定比例来分配父容器空间。
+//Flex和Expanded
+
 //Flex组件可以沿着水平或垂直方向排列子组件，
 //如果你知道主轴方向，使用Row或Column会方便一些，
 //因为Row和Column都继承自Flex，参数基本相同，所以能使用Flex的地方基本上都可以使用Row或Column。
