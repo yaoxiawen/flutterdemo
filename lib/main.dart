@@ -27,6 +27,7 @@ import 'switchandcheckboxdemo/SwitchAndCheckboxDemo.dart';
 import 'tabbardemo/TabBarDemoPage.dart';
 import 'textdemo/TextDemo.dart';
 import 'textfielddemo/TextFieldDemo.dart';
+import 'transformdemo/TransformDemo.dart';
 import 'wrapandflow/FlowDemo.dart';
 import 'wrapandflow/WrapDemo.dart';
 
@@ -179,6 +180,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "DecoratedBoxDemo": (context) {
     return DecoratedBoxDemo();
+  },
+  "TransformDemo": (context) {
+    return TransformDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
