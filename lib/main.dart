@@ -14,6 +14,7 @@ import 'progressdemo/ProgressDemo.dart';
 import 'progressdemo/ProgressDemo2.dart';
 import 'routedemo/PushNamedDemoPage.dart';
 import 'routedemo/RouteDemoPage.dart';
+import 'rowandcolumn/RowDemo.dart';
 import 'sharedpreferencesdemo/SharedPreferencesDemo.dart';
 import 'statemanager/StateManagerDemo.dart';
 import 'switchandcheckboxdemo/SwitchAndCheckboxDemo.dart';
@@ -143,6 +144,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "ProgressAnimationDemo": (context) {
     return ProgressAnimationDemo();
+  },
+  "RowDemo": (context) {
+    return RowDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
