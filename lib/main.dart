@@ -22,6 +22,7 @@ import 'switchandcheckboxdemo/SwitchAndCheckboxDemo.dart';
 import 'tabbardemo/TabBarDemoPage.dart';
 import 'textdemo/TextDemo.dart';
 import 'textfielddemo/TextFieldDemo.dart';
+import 'wrapandflow/WrapDemo.dart';
 
 //应用入口
 void main() => runApp(MyApp()); //main函数使用了(=>)符号，这是Dart中单行函数或方法的简写。
@@ -151,6 +152,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "FlexDemo": (context) {
     return FlexDemo();
+  },
+  "WrapDemo": (context) {
+    return WrapDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
