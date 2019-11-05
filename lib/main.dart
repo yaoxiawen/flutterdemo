@@ -2,6 +2,7 @@
 //Flutter默认提供了一套丰富的Material风格的UI组件。
 import 'package:flutter/material.dart';
 
+import 'aligndemo/AlignDemo.dart';
 import 'buttondemo/ButtonDemo.dart';
 import 'canvasdemo/CanvasDemo.dart';
 import 'flexdemo/FlexDemo.dart';
@@ -163,6 +164,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "StackDemo": (context) {
     return StackDemo();
+  },
+  "AlignDemo": (context) {
+    return AlignDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
