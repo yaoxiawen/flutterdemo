@@ -11,6 +11,7 @@ import 'imagedemo/ImageDemo.dart';
 import 'lifedemo/LifeDemo.dart';
 import 'listviewdemo/ListViewDemoPage.dart';
 import 'officialdemo/OfficialDemoPage.dart';
+import 'paddingdemo/PaddingDemo.dart';
 import 'progressdemo/ProgressAnimationDemo.dart';
 import 'progressdemo/ProgressDemo.dart';
 import 'progressdemo/ProgressDemo2.dart';
@@ -167,6 +168,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "AlignDemo": (context) {
     return AlignDemo();
+  },
+  "PaddingDemo": (context) {
+    return PaddingDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
