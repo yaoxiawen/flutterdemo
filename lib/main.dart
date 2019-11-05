@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'aligndemo/AlignDemo.dart';
 import 'buttondemo/ButtonDemo.dart';
 import 'canvasdemo/CanvasDemo.dart';
+import 'constrainedboxdemo/ConstrainedBoxDemo.dart';
 import 'flexdemo/FlexDemo.dart';
 import 'icondemo/IconDemo.dart';
 import 'imagedemo/ImageDemo.dart';
@@ -171,6 +172,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "PaddingDemo": (context) {
     return PaddingDemo();
+  },
+  "ConstrainedBoxDemo": (context) {
+    return ConstrainedBoxDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
