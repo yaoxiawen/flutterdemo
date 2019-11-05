@@ -5,9 +5,6 @@ import 'package:flutter/material.dart';
 //Wrap和Flow
 
 //可以认为Wrap和Flex（包括Row和Column）除了超出显示范围后Wrap会折行外，其它行为基本相同。
-//一般很少会使用Flow，因为其过于复杂，需要自己实现子widget的位置转换，
-//在很多场景下首先要考虑的是Wrap是否满足需求。
-//Flow主要用于一些需要自定义布局策略或性能要求较高(如动画中)的场景。
 class WrapDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

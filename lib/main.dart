@@ -22,6 +22,7 @@ import 'switchandcheckboxdemo/SwitchAndCheckboxDemo.dart';
 import 'tabbardemo/TabBarDemoPage.dart';
 import 'textdemo/TextDemo.dart';
 import 'textfielddemo/TextFieldDemo.dart';
+import 'wrapandflow/FlowDemo.dart';
 import 'wrapandflow/WrapDemo.dart';
 
 //应用入口
@@ -155,6 +156,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "WrapDemo": (context) {
     return WrapDemo();
+  },
+  "FlowDemo": (context) {
+    return FlowDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
