@@ -6,6 +6,7 @@ import 'aligndemo/AlignDemo.dart';
 import 'buttondemo/ButtonDemo.dart';
 import 'canvasdemo/CanvasDemo.dart';
 import 'constrainedboxdemo/ConstrainedBoxDemo.dart';
+import 'containerdemo/ContainerDemo.dart';
 import 'decoratedboxdemo/DecoratedBoxDemo.dart';
 import 'flexdemo/FlexDemo.dart';
 import 'icondemo/IconDemo.dart';
@@ -183,6 +184,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "TransformDemo": (context) {
     return TransformDemo();
+  },
+  "ContainerDemo": (context) {
+    return ContainerDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
