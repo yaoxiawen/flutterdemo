@@ -21,6 +21,7 @@ import 'progressdemo/ProgressDemo2.dart';
 import 'routedemo/PushNamedDemoPage.dart';
 import 'routedemo/RouteDemoPage.dart';
 import 'rowandcolumn/RowDemo.dart';
+import 'scaffolddemo/ScaffoldDemo.dart';
 import 'sharedpreferencesdemo/SharedPreferencesDemo.dart';
 import 'stackdemo/StackDemo.dart';
 import 'statemanager/StateManagerDemo.dart';
@@ -187,6 +188,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "ContainerDemo": (context) {
     return ContainerDemo();
+  },
+  "ScaffoldDemo": (context) {
+    return ScaffoldDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
