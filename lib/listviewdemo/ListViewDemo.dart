@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 
 class ListViewDemo extends StatelessWidget {
+  final String title;
+
+  ListViewDemo({Key key, this.title}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
         backgroundColor: Colors.grey,
-        title: Text("YXW ListView Demo"),
+        title: Text(title),
       ),
       body: ListView.builder(
         itemBuilder: (context, index) {
@@ -83,7 +87,6 @@ class DemoItem extends StatelessWidget {
               )
             ],
           ),
-        )
-    );
+        ));
   }
 }

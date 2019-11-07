@@ -8,12 +8,16 @@ import 'package:flutter/material.dart';
 //可滚动组件通过一个List来作为其children属性时，只适用于子组件较少的情况，
 //这是一个通用规律，并非ListView自己的特性，像GridView也是如此。
 class ListViewDemo2 extends StatelessWidget {
+  final String title;
+
+  ListViewDemo2({Key key, this.title}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey,
-        title: Text("YXW ListView Demo2"),
+        title: Text(title),
       ),
       body: ListView(
         shrinkWrap: true,
