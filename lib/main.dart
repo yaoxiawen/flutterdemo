@@ -24,6 +24,7 @@ import 'routedemo/RouteDemoPage.dart';
 import 'rowandcolumn/RowDemo.dart';
 import 'scaffolddemo/ScaffoldDemo.dart';
 import 'sharedpreferencesdemo/SharedPreferencesDemo.dart';
+import 'singlechildscrollviewdemo/SingleChildScrollViewDemo.dart';
 import 'stackdemo/StackDemo.dart';
 import 'statemanager/StateManagerDemo.dart';
 import 'switchandcheckboxdemo/SwitchAndCheckboxDemo.dart';
@@ -195,6 +196,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "ClipDemo": (context) {
     return ClipDemo();
+  },
+  "SingleChildScrollViewDemo": (context) {
+    return SingleChildScrollViewDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
