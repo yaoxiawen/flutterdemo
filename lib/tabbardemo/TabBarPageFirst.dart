@@ -37,6 +37,7 @@ class _TabBarPageFirstState extends State<TabBarPageFirst>
   Widget build(BuildContext context) {
     super.build(context);// See AutomaticKeepAliveClientMixin.
     return ListView.builder(
+      ////itemCount：列表项的数量，如果为null，则为无限列表。
       padding: EdgeInsets.all(16.0),
       itemBuilder: (context,index){
         if(index.isOdd){

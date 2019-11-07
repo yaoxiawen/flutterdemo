@@ -3,6 +3,7 @@ import 'ListViewDemo3.dart';
 import 'ListViewDemo.dart';
 import 'ListViewDemo2.dart';
 import 'ListViewDemo4.dart';
+import 'ListViewDemo5.dart';
 
 class ListViewDemoPage extends StatelessWidget {
   @override
@@ -56,8 +57,19 @@ class ListViewDemoPage extends StatelessWidget {
                 },
                 child: Text("ListView.separated"),
               ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              ListViewDemo5(title: "无限加载列表")));
+                },
+                child: Text("无限加载列表"),
+              ),
             ],
           ),
-        ));
+        ),
+    );
   }
 }
