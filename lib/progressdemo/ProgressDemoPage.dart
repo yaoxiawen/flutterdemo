@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'ListViewDemo3.dart';
-import 'ListViewDemo.dart';
-import 'ListViewDemo2.dart';
+import 'ProgressAnimationDemo.dart';
+import 'ProgressDemo.dart';
+import 'ProgressDemo2.dart';
 
-class ListViewDemoPage extends StatelessWidget {
+class ProgressDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("YXW ListView Demo"),
+          title: Text("YXW Progress Demo"),
           backgroundColor: Colors.blue,
         ),
         body: Container(
@@ -21,7 +21,7 @@ class ListViewDemoPage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => ListViewDemo()));
+                          builder: (context) => ProgressDemo()));
                 },
                 child: Text("demo1"),
               ),
@@ -30,7 +30,7 @@ class ListViewDemoPage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => ListViewDemo2()));
+                          builder: (context) => ProgressDemo2()));
                 },
                 child: Text("demo2"),
               ),
@@ -39,9 +39,9 @@ class ListViewDemoPage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => ListViewDemo3()));
+                          builder: (context) => ProgressAnimationDemo()));
                 },
-                child: Text("demo3"),
+                child: Text("progress animation"),
               ),
             ],
           ),

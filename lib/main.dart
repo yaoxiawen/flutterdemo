@@ -1,6 +1,7 @@
 //导入了Material UI组件库。Material是一种标准的移动端和web端的视觉设计语言，
 //Flutter默认提供了一套丰富的Material风格的UI组件。
 import 'package:flutter/material.dart';
+import 'package:flutter_app/progressdemo/ProgressDemoPage.dart';
 
 import 'aligndemo/AlignDemo.dart';
 import 'buttondemo/ButtonDemo.dart';
@@ -13,12 +14,11 @@ import 'flexdemo/FlexDemo.dart';
 import 'icondemo/IconDemo.dart';
 import 'imagedemo/ImageDemo.dart';
 import 'lifedemo/LifeDemo.dart';
+import 'listviewdemo/ListViewDemo.dart';
+import 'listviewdemo/ListViewDemo2.dart';
 import 'listviewdemo/ListViewDemoPage.dart';
 import 'officialdemo/OfficialDemoPage.dart';
 import 'paddingdemo/PaddingDemo.dart';
-import 'progressdemo/ProgressAnimationDemo.dart';
-import 'progressdemo/ProgressDemo.dart';
-import 'progressdemo/ProgressDemo2.dart';
 import 'routedemo/PushNamedDemoPage.dart';
 import 'routedemo/RouteDemoPage.dart';
 import 'rowandcolumn/RowDemo.dart';
@@ -110,9 +110,6 @@ Map<String, WidgetBuilder> routes = {
   "官方Demo": (context) {
     return OfficialDemoPage(title: "Official Demo");
   },
-  "ListViewDemo": (context) {
-    return ListViewDemoPage();
-  },
   "TabBarDemo": (context) {
     return TabBarDemoPage();
   },
@@ -130,9 +127,6 @@ Map<String, WidgetBuilder> routes = {
   },
   "CanvasDemo": (context) {
     return CanvasDemo();
-  },
-  "ProgressDemo": (context) {
-    return ProgressDemo();
   },
   "LifeDemo": (context) {
     return LifeDemo();
@@ -152,11 +146,8 @@ Map<String, WidgetBuilder> routes = {
   "SwitchAndCheckboxDemo": (context) {
     return SwitchAndCheckboxDemo();
   },
-  "ProgressDemo2": (context) {
-    return ProgressDemo2();
-  },
-  "ProgressAnimationDemo": (context) {
-    return ProgressAnimationDemo();
+  "ProgressDemo": (context) {
+    return ProgressDemoPage();
   },
   "RowDemo": (context) {
     return RowDemo();
@@ -199,6 +190,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "SingleChildScrollViewDemo": (context) {
     return SingleChildScrollViewDemo();
+  },
+  "ListViewDemo": (context) {
+    return ListViewDemoPage();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();

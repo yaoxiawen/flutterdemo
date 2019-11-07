@@ -5,6 +5,7 @@ class ProgressDemo2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.grey,
         title: Text("YXW Progress Demo2"),
       ),
       body: Container(

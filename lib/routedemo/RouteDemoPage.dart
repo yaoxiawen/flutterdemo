@@ -58,7 +58,7 @@ class RouteDemoState extends State<RouteDemoPage> {
                 onPressed: () {
                   //命名路由在MaterialApp中，在整个应用中注册路由表routes，使用pushNamed，参数用路由名称
                   //arguments传值
-                  Navigator.pushNamed(context, "pushnameddemo",
+                  Navigator.pushNamed(context, "PushNamedDemo",
                       arguments: "pushnamed1传过来的值");
                 },
                 child: Text("命名路由1"),
@@ -67,7 +67,7 @@ class RouteDemoState extends State<RouteDemoPage> {
                 onPressed: () {
                   //命名路由在MaterialApp中，在整个应用中注册路由表routes，使用pushNamed，参数用路由名称
                   //arguments传值
-                  Navigator.pushNamed(context, "pushnameddemo2",
+                  Navigator.pushNamed(context, "PushNamedDemo2",
                       arguments: "pushnamed2传过来的值");
                 },
                 child: Text("命名路由2"),

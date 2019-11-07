@@ -41,6 +41,7 @@ class _ProgressDemoState extends State<ProgressDemo> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
+          backgroundColor: Colors.grey,
           title: new Text("YXW Progress Demo"),
         ),
         body: getBody());

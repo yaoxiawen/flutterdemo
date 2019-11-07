@@ -32,6 +32,7 @@ class _ProgressAnimationState extends State<ProgressAnimationDemo>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.grey,
         title: Text("YXW ProgressAnimation"),
       ),
       body: Container(
