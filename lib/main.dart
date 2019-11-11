@@ -9,6 +9,7 @@ import 'canvasdemo/CanvasDemo.dart';
 import 'clipdemo/ClipDemo.dart';
 import 'constrainedboxdemo/ConstrainedBoxDemo.dart';
 import 'containerdemo/ContainerDemo.dart';
+import 'customscrollview/CustomScrollViewDemo.dart';
 import 'decoratedboxdemo/DecoratedBoxDemo.dart';
 import 'flexdemo/FlexDemo.dart';
 import 'gridviewdemo/GridViewDemo.dart';
@@ -198,6 +199,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "GridViewDemo": (context) {
     return GridViewDemoPage();
+  },
+  "CustomScrollViewDemo": (context) {
+    return CustomScrollViewDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
