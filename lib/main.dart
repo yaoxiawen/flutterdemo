@@ -26,6 +26,7 @@ import 'routedemo/PushNamedDemoPage.dart';
 import 'routedemo/RouteDemoPage.dart';
 import 'rowandcolumn/RowDemo.dart';
 import 'scaffolddemo/ScaffoldDemo.dart';
+import 'scrolldemo/ScrollDemoPage.dart';
 import 'sharedpreferencesdemo/SharedPreferencesDemo.dart';
 import 'singlechildscrollviewdemo/SingleChildScrollViewDemo.dart';
 import 'stackdemo/StackDemo.dart';
@@ -202,6 +203,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "CustomScrollViewDemo": (context) {
     return CustomScrollViewDemo();
+  },
+  "ScrollDemo": (context) {
+    return ScrollDemoPage();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
