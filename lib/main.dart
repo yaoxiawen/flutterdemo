@@ -11,6 +11,8 @@ import 'constrainedboxdemo/ConstrainedBoxDemo.dart';
 import 'containerdemo/ContainerDemo.dart';
 import 'decoratedboxdemo/DecoratedBoxDemo.dart';
 import 'flexdemo/FlexDemo.dart';
+import 'gridviewdemo/GridViewDemo.dart';
+import 'gridviewdemo/GridViewDemoPage.dart';
 import 'icondemo/IconDemo.dart';
 import 'imagedemo/ImageDemo.dart';
 import 'lifedemo/LifeDemo.dart';
@@ -193,6 +195,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "ListViewDemo": (context) {
     return ListViewDemoPage();
+  },
+  "GridViewDemo": (context) {
+    return GridViewDemoPage();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
