@@ -37,6 +37,7 @@ import 'switchandcheckboxdemo/SwitchAndCheckboxDemo.dart';
 import 'tabbardemo/TabBarDemoPage.dart';
 import 'textdemo/TextDemo.dart';
 import 'textfielddemo/TextFieldDemo.dart';
+import 'themedemo/ThemeDemo.dart';
 import 'transformdemo/TransformDemo.dart';
 import 'willpopscope/WillPopScopeDemo.dart';
 import 'wrapandflow/FlowDemo.dart';
@@ -218,6 +219,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "ProviderDemo": (context) {
     return ProviderDemo();
+  },
+  "ThemeDemo": (context) {
+    return ThemeDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
