@@ -16,6 +16,7 @@ import 'gridviewdemo/GridViewDemo.dart';
 import 'gridviewdemo/GridViewDemoPage.dart';
 import 'icondemo/IconDemo.dart';
 import 'imagedemo/ImageDemo.dart';
+import 'inheritedwidget/InheritedWidgetDemo.dart';
 import 'lifedemo/LifeDemo.dart';
 import 'listviewdemo/ListViewDemo.dart';
 import 'listviewdemo/ListViewDemo2.dart';
@@ -210,6 +211,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "WillPopScopeDemo": (context) {
     return WillPopScopeDemo();
+  },
+  "InheritedWidgetDemo": (context) {
+    return InheritedWidgetDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
