@@ -23,6 +23,7 @@ import 'listviewdemo/ListViewDemo2.dart';
 import 'listviewdemo/ListViewDemoPage.dart';
 import 'officialdemo/OfficialDemoPage.dart';
 import 'paddingdemo/PaddingDemo.dart';
+import 'providerdemo/ProviderDemo.dart';
 import 'routedemo/PushNamedDemoPage.dart';
 import 'routedemo/RouteDemoPage.dart';
 import 'rowandcolumn/RowDemo.dart';
@@ -214,6 +215,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "InheritedWidgetDemo": (context) {
     return InheritedWidgetDemo();
+  },
+  "ProviderDemo": (context) {
+    return ProviderDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
