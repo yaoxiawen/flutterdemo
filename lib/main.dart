@@ -36,6 +36,7 @@ import 'tabbardemo/TabBarDemoPage.dart';
 import 'textdemo/TextDemo.dart';
 import 'textfielddemo/TextFieldDemo.dart';
 import 'transformdemo/TransformDemo.dart';
+import 'willpopscope/WillPopScopeDemo.dart';
 import 'wrapandflow/FlowDemo.dart';
 import 'wrapandflow/WrapDemo.dart';
 
@@ -206,6 +207,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "ScrollDemo": (context) {
     return ScrollDemoPage();
+  },
+  "WillPopScopeDemo": (context) {
+    return WillPopScopeDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
