@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/progressdemo/ProgressDemoPage.dart';
 
 import 'aligndemo/AlignDemo.dart';
+import 'asynuiupdate/AsynUIUpdateDemoPage.dart';
 import 'buttondemo/ButtonDemo.dart';
 import 'canvasdemo/CanvasDemo.dart';
 import 'clipdemo/ClipDemo.dart';
@@ -222,6 +223,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "ThemeDemo": (context) {
     return ThemeDemo();
+  },
+  "AsynUIUpdateDemo": (context) {
+    return AsynUIUpdateDemoPage();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
