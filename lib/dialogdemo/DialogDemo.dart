@@ -88,6 +88,36 @@ class DialogDemo extends StatelessWidget {
               },
               child: Text("对话框状态管理markNeedsBuild"),
             ),
+            RaisedButton(
+              onPressed: () {
+                _showModalBottomSheet(context);
+              },
+              child: Text("底部菜单列表showModalBottomSheet"),
+            ),
+            RaisedButton(
+              onPressed: () {
+                _showBottomSheet(context);
+              },
+              child: Text("底部全屏菜单列表showBottomSheet"),
+            ),
+            RaisedButton(
+              onPressed: () {
+                showLoadingDialog(context);
+              },
+              child: Text("showLoadingDialog"),
+            ),
+            RaisedButton(
+              onPressed: () {
+                showLoadingDialog2(context);
+              },
+              child: Text("LoadingDialog限制宽高"),
+            ),
+            RaisedButton(
+              onPressed: () {
+                _showDatePicker1(context);
+              },
+              child: Text("Material风格的日历选择器"),
+            ),
           ],
         ),
       ),
@@ -346,7 +376,9 @@ Future<void> showMarkNeedsBuild(BuildContext context) async {
                   // 通过Builder来获得构建Checkbox的`context`，
                   // 这是一种常用的缩小`context`范围的方式
                   Builder(
-                    builder: (context,) {
+                    builder: (
+                      context,
+                    ) {
                       return Checkbox(
                         value: _withTree,
                         onChanged: (value) {
@@ -380,4 +412,120 @@ Future<void> showMarkNeedsBuild(BuildContext context) async {
   } else {
     print("同时删除子目录: $deleteTree");
   }
+}
+
+Future<void> _showModalBottomSheet(BuildContext context) async {
+  int index = await showModalBottomSheet<int>(
+    context: context,
+    builder: (BuildContext context) {
+      return Column(
+        children: <Widget>[
+          ListTile(title: Text("请选择")),
+          Expanded(
+            child: ListView.builder(
+              itemCount: 30,
+              itemBuilder: (BuildContext context, int index) {
+                return ListTile(
+                  title: Text("$index"),
+                  onTap: () => Navigator.of(context).pop(index),
+                );
+              },
+            ),
+          ),
+        ],
+      );
+    },
+  );
+  if (index != null) {
+    print("点击了：$index");
+  }
+}
+
+//showBottomSheet是调用widget树顶部的Scaffold组件的ScaffoldState的showBottomSheet同名方法实现，
+//也就是说要调用showBottomSheet方法就必须得保证父级组件中有Scaffold。
+//方法失败，显示No Scaffold widget found.，不知原因
+PersistentBottomSheetController<int> _showBottomSheet(BuildContext context) {
+  return showBottomSheet<int>(
+    context: context,
+    builder: (BuildContext context) {
+      return Column(
+        children: <Widget>[
+          ListTile(title: Text("请选择")),
+          Expanded(
+            child: ListView.builder(
+              itemCount: 30,
+              itemBuilder: (BuildContext context, int index) {
+                return ListTile(
+                  title: Text("$index"),
+                  onTap: () => Navigator.of(context).pop(),
+                );
+              },
+            ),
+          ),
+        ],
+      );
+    },
+  );
+}
+
+showLoadingDialog(BuildContext context) {
+  showDialog<int>(
+    context: context,
+    barrierDismissible: false,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            CircularProgressIndicator(),
+            Padding(
+              padding: EdgeInsets.only(top: 26.0),
+              child: Text("正在加载，请稍后..."),
+            )
+          ],
+        ),
+      );
+    },
+  );
+}
+
+//showDialog中已经给对话框设置了宽度限制
+//可以使用UnconstrainedBox先抵消showDialog对宽度的限制，然后再使用SizedBox指定宽度
+showLoadingDialog2(BuildContext context) {
+  showDialog<int>(
+    context: context,
+    barrierDismissible: false,
+    builder: (BuildContext context) {
+      return UnconstrainedBox(
+        constrainedAxis: Axis.vertical,
+        child: SizedBox(
+          width: 280,
+          child: AlertDialog(
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                CircularProgressIndicator(),
+                Padding(
+                  padding: EdgeInsets.only(top: 26.0),
+                  child: Text("正在加载，请稍后..."),
+                )
+              ],
+            ),
+          ),
+        ),
+      );
+    },
+  );
+}
+
+Future<DateTime> _showDatePicker1(BuildContext context) {
+  var date = DateTime.now();
+  return showDatePicker(
+    context: context,
+    initialDate: date,
+    firstDate: date,
+    lastDate: date.add( //未来30天可选
+      Duration(days: 30),
+    ),
+  );
 }
