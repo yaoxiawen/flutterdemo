@@ -12,6 +12,7 @@ import 'constrainedboxdemo/ConstrainedBoxDemo.dart';
 import 'containerdemo/ContainerDemo.dart';
 import 'customscrollview/CustomScrollViewDemo.dart';
 import 'decoratedboxdemo/DecoratedBoxDemo.dart';
+import 'dialogdemo/DialogDemo.dart';
 import 'flexdemo/FlexDemo.dart';
 import 'gridviewdemo/GridViewDemo.dart';
 import 'gridviewdemo/GridViewDemoPage.dart';
@@ -226,6 +227,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "AsynUIUpdateDemo": (context) {
     return AsynUIUpdateDemoPage();
+  },
+  "DialogDemo": (context) {
+    return DialogDemo();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
