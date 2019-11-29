@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'EventDemo.dart';
+import 'GestureArena.dart';
 import 'GestureDemo.dart';
 
 //Flutter中的手势系统有两个独立的层。
@@ -46,7 +47,7 @@ class EventAndGestureDemoPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => GestureDemo(title: "YXW GestureDemo",),
+                    builder: (context) => GestureArena(title: "YXW GestureArena",),
                   ),
                 );
               },
