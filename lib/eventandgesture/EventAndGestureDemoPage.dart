@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'EventDemo.dart';
+import 'GestureDemo.dart';
 
 //Flutter中的手势系统有两个独立的层。
 //第一层为原始指针(pointer)事件，它描述了屏幕上指针（例如，触摸、鼠标和触控笔）的位置和移动。
@@ -28,6 +29,17 @@ class EventAndGestureDemoPage extends StatelessWidget {
                 );
               },
               child: Text("EventDemo"),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GestureDemo(title: "YXW GestureDemo",),
+                  ),
+                );
+              },
+              child: Text("GestureDemo"),
             ),
           ],
         ),
