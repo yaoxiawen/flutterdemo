@@ -41,6 +41,17 @@ class EventAndGestureDemoPage extends StatelessWidget {
               },
               child: Text("GestureDemo"),
             ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GestureDemo(title: "YXW GestureDemo",),
+                  ),
+                );
+              },
+              child: Text("手势竞争与冲突"),
+            ),
           ],
         ),
       ),
