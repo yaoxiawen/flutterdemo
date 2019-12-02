@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'EventBusDemo1.dart';
 
 import 'EventDemo.dart';
 import 'GestureArena.dart';
@@ -52,6 +53,17 @@ class EventAndGestureDemoPage extends StatelessWidget {
                 );
               },
               child: Text("手势竞争与冲突"),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => EventBusDemo1(),
+                  ),
+                );
+              },
+              child: Text("事件总线"),
             ),
           ],
         ),
