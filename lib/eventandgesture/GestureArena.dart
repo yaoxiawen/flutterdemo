@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
 class GestureArena extends StatefulWidget {
-  final String title;
-
-  GestureArena({Key key, this.title}) : super(key: key);
 
   @override
   _GestureArenaState createState() {
@@ -26,7 +23,7 @@ class _GestureArenaState extends State<GestureArena> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("YXW GestureAren"),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

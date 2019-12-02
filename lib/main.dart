@@ -1,6 +1,7 @@
 //导入了Material UI组件库。Material是一种标准的移动端和web端的视觉设计语言，
 //Flutter默认提供了一套丰富的Material风格的UI组件。
 import 'package:flutter/material.dart';
+import 'package:flutter_app/eventandgesture/EventBusDemo1.dart';
 import 'package:flutter_app/progressdemo/ProgressDemoPage.dart';
 
 import 'aligndemo/AlignDemo.dart';
@@ -13,16 +14,15 @@ import 'containerdemo/ContainerDemo.dart';
 import 'customscrollview/CustomScrollViewDemo.dart';
 import 'decoratedboxdemo/DecoratedBoxDemo.dart';
 import 'dialogdemo/DialogDemo.dart';
-import 'eventandgesture/EventAndGestureDemoPage.dart';
+import 'eventandgesture/EventDemo.dart';
+import 'eventandgesture/GestureArena.dart';
+import 'eventandgesture/GestureDemo.dart';
 import 'flexdemo/FlexDemo.dart';
-import 'gridviewdemo/GridViewDemo.dart';
 import 'gridviewdemo/GridViewDemoPage.dart';
 import 'icondemo/IconDemo.dart';
 import 'imagedemo/ImageDemo.dart';
 import 'inheritedwidget/InheritedWidgetDemo.dart';
 import 'lifedemo/LifeDemo.dart';
-import 'listviewdemo/ListViewDemo.dart';
-import 'listviewdemo/ListViewDemo2.dart';
 import 'listviewdemo/ListViewDemoPage.dart';
 import 'officialdemo/OfficialDemoPage.dart';
 import 'paddingdemo/PaddingDemo.dart';
@@ -232,8 +232,17 @@ Map<String, WidgetBuilder> routes = {
   "DialogDemo": (context) {
     return DialogDemo();
   },
-  "EventAndGestureDemo": (context) {
-    return EventAndGestureDemoPage();
+  "EventDemo": (context) {
+    return EventDemo();
+  },
+  "GestureDemo": (context) {
+    return GestureDemo();
+  },
+  "GestureArena": (context) {
+    return GestureArena();
+  },
+  "EventBusDemo": (context) {
+    return EventBusDemo1();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();

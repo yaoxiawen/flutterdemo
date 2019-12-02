@@ -3,9 +3,6 @@ import 'package:flutter/material.dart';
 //使用Listener来监听原始触摸事件
 //事件会在组件树中向上冒泡，这些事件会从最内部的组件被分发到组件树根的路径上的所有组件，这和Web开发中浏览器的事件冒泡机制相似，
 class EventDemo extends StatefulWidget {
-  final String title;
-
-  EventDemo({Key key, this.title}) : super(key: key);
 
   @override
   _EventDemoState createState() {
@@ -34,7 +31,7 @@ class _EventDemoState extends State<EventDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("YXW EventDemo"),
       ),
       body: SingleChildScrollView(
         child: Column(

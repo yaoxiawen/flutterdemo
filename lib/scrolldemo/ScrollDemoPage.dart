@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'NotificationDemo.dart';
+import 'ScrollNotificationDemo.dart';
 import 'ScrollControllerDemo.dart';
 
 class ScrollDemoPage extends StatelessWidget {
@@ -34,7 +34,8 @@ class ScrollDemoPage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) =>
-                        NotificationDemo(title: "NotificationDemo Demo"),
+                        ScrollNotificationDemo(title: "ScrollNotification "
+                            "Demo"),
                   ),
                 );
               },

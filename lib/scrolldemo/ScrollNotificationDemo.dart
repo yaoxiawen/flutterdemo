@@ -3,18 +3,18 @@ import 'package:flutter/material.dart';
 //Flutter Widget树中子Widget可以通过发送通知（Notification）与父(包括祖先)Widget通信。
 //父级组件可以通过NotificationListener组件来监听自己关注的通知。
 //可滚动组件在滚动时会发送ScrollNotification类型的通知，ScrollBar正是通过监听滚动通知来实现的。
-class NotificationDemo extends StatefulWidget {
+class ScrollNotificationDemo extends StatefulWidget {
   final String title;
 
-  NotificationDemo({Key key, this.title}) : super(key: key);
+  ScrollNotificationDemo({Key key, this.title}) : super(key: key);
 
   @override
-  NotificationState createState() {
-    return NotificationState();
+  ScrollNotificationState createState() {
+    return ScrollNotificationState();
   }
 }
 
-class NotificationState extends State<NotificationDemo> {
+class ScrollNotificationState extends State<ScrollNotificationDemo> {
   String _progress = "0%"; //保存进度百分比
 
   @override

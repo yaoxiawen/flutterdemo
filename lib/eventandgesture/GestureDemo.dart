@@ -7,9 +7,6 @@ import 'package:flutter/material.dart';
 //GestureRecognizer是一个抽象类，一种手势的识别器对应一个GestureRecognizer的子类，
 //Flutter实现了丰富的手势识别器，我们可以直接使用。
 class GestureDemo extends StatefulWidget {
-  final String title;
-
-  GestureDemo({Key key, this.title}) : super(key: key);
 
   @override
   _GestureDemo createState() {
@@ -47,7 +44,7 @@ class _GestureDemo extends State<GestureDemo>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("YXW GestureDemo"),
       ),
       body: SingleChildScrollView(
         child: Column(
