@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/scrolldemo/ScrollNotificationDemo.dart';
 
+import 'MyNotificationDemo.dart';
 import 'NotificationListenerDemo.dart';
 
 class NotificationDemoPage extends StatelessWidget {
@@ -40,6 +41,18 @@ class NotificationDemoPage extends StatelessWidget {
                 );
               },
               child: Text("ScrollNotification"),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        MyNotificationDemo(title: "MyNotification Demo"),
+                  ),
+                );
+              },
+              child: Text("自定义Notification"),
             )
           ],
         ),
