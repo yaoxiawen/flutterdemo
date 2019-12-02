@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/eventandgesture/EventBus.dart';
-import 'package:flutter_app/eventandgesture/EventBusDemo3.dart';
+import 'package:flutter_app/eventbusdemo/EventBus.dart';
 
-class EventBusDemo2 extends StatelessWidget {
+class EventBusDemo3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    bus.on("login", (arg) {
+      print("EventBusDemo3 has logined");
+    });
+
     return Scaffold(
       appBar: AppBar(
-        title: Text("YXW EventBusDemo2"),
+        title: Text("YXW EventBusDemo3"),
         backgroundColor: Colors.blue,
       ),
       body: Container(
@@ -17,13 +20,6 @@ class EventBusDemo2 extends StatelessWidget {
           children: <Widget>[
             RaisedButton(
               onPressed: () {
-                bus.emit("login");
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => EventBusDemo3(),
-                  ),
-                );
               },
               child: Text("跳转"),
             ),

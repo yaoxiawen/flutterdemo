@@ -1,7 +1,7 @@
 //导入了Material UI组件库。Material是一种标准的移动端和web端的视觉设计语言，
 //Flutter默认提供了一套丰富的Material风格的UI组件。
 import 'package:flutter/material.dart';
-import 'package:flutter_app/eventandgesture/EventBusDemo1.dart';
+import 'package:flutter_app/eventbusdemo/EventBusDemo1.dart';
 import 'package:flutter_app/progressdemo/ProgressDemoPage.dart';
 
 import 'aligndemo/AlignDemo.dart';

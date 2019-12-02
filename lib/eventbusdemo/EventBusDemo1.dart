@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/eventandgesture/EventBus.dart';
-import 'package:flutter_app/eventandgesture/EventBusDemo2.dart';
+import 'package:flutter_app/eventbusdemo/EventBus.dart';
+import 'EventBusDemo2.dart';
 
 class EventBusDemo1 extends StatelessWidget {
   @override
