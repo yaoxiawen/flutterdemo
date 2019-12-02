@@ -24,6 +24,7 @@ import 'imagedemo/ImageDemo.dart';
 import 'inheritedwidget/InheritedWidgetDemo.dart';
 import 'lifedemo/LifeDemo.dart';
 import 'listviewdemo/ListViewDemoPage.dart';
+import 'notificationdemo/NotificationDemoPage.dart';
 import 'officialdemo/OfficialDemoPage.dart';
 import 'paddingdemo/PaddingDemo.dart';
 import 'providerdemo/ProviderDemo.dart';
@@ -243,6 +244,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "EventBusDemo": (context) {
     return EventBusDemo1();
+  },
+  "NotoficationDemo": (context) {
+    return NotificationDemoPage();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
