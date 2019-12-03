@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'AnimatedWidgetDemo.dart';
 import 'CurveAnimationDemo.dart';
 import 'ScaleAnimationDemo.dart';
 
@@ -37,6 +38,17 @@ class AnimationDemoPage extends StatelessWidget {
                 );
               },
               child: Text("CurveAnimation"),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => AnimatedWidgetDemo(),
+                  ),
+                );
+              },
+              child: Text("AnimatedWidget"),
             ),
           ],
         ),
