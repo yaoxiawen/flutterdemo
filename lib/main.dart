@@ -5,6 +5,7 @@ import 'package:flutter_app/eventbusdemo/EventBusDemo1.dart';
 import 'package:flutter_app/progressdemo/ProgressDemoPage.dart';
 
 import 'aligndemo/AlignDemo.dart';
+import 'animationdemo/AnimationDemoPage.dart';
 import 'asynuiupdate/AsynUIUpdateDemoPage.dart';
 import 'buttondemo/ButtonDemo.dart';
 import 'canvasdemo/CanvasDemo.dart';
@@ -247,6 +248,9 @@ Map<String, WidgetBuilder> routes = {
   },
   "NotoficationDemo": (context) {
     return NotificationDemoPage();
+  },
+  "AnimationDemoPage": (context) {
+    return AnimationDemoPage();
   },
   "PushNamedDemo": (context) {
     return PushNamedDemoPage();
