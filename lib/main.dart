@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/eventbusdemo/EventBusDemo1.dart';
 import 'package:flutter_app/progressdemo/ProgressDemoPage.dart';
 
+import 'PicDemo.dart';
 import 'aligndemo/AlignDemo.dart';
 import 'animationdemo/AnimationDemoPage.dart';
 import 'asynuiupdate/AsynUIUpdateDemoPage.dart';
@@ -122,6 +123,9 @@ class HomePage extends StatelessWidget {
 Map<String, WidgetBuilder> routes = {
   "官方Demo": (context) {
     return OfficialDemoPage(title: "Official Demo");
+  },
+  "picDemo": (context) {
+    return PicDemo();
   },
   "TabBarDemo": (context) {
     return TabBarDemoPage();
